@@ -27,6 +27,7 @@
   <backgrounds name="background">
     <background>background\bg_one</background>
     <background>background\bg_one_clouds</background>
+    <background>background\bg_hills</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

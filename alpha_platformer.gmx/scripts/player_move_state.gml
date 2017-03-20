@@ -23,7 +23,7 @@ if (!place_meeting(x, y + 1, Solid))
         sprite_index = spr_player_jump;
         image_speed = .1;
     }
-    
+   
     // Control the jump heihgt
     if (up_release && vspd < -6)
     {
