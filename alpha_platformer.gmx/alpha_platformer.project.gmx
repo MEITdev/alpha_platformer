@@ -14,17 +14,39 @@
       <sprite>sprites\spr_player_move</sprite>
       <sprite>sprites\spr_player_mask</sprite>
     </sprites>
+    <sprites name="Level">
+      <sprite>sprites\spr_solid</sprite>
+      <sprite>sprites\spr_ground_01_center</sprite>
+      <sprite>sprites\spr_ground_01_left</sprite>
+      <sprite>sprites\spr_ground_01_right</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_one</background>
+    <background>background\bg_one_clouds</background>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <scripts name="Player States">
+      <script>scripts\player_idle_state.gml</script>
+    </scripts>
+  </scripts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\Player</object>
       <object>objects\PlayerStats</object>
     </objects>
+    <objects name="Level">
+      <object>objects\Solid</object>
+      <object>objects\Ground_01</object>
+      <object>objects\Background</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_blank</room>
+    <room>rooms\rm_one</room>
+    <rooms name="templates">
+      <room>rooms\rm_blank</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
