@@ -26,15 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>///Initialise the Player Object
-state = player_idle_state;
+state = player_move_state;
 
-spd = 4;
+spd = 6;
+jspd = -16;
 vspd = 0;
 hspd = 0;
 acc = 0;
 grav = 1;
-
-
 </string>
           </argument>
         </arguments>
@@ -59,67 +58,6 @@ grav = 1;
             <kind>1</kind>
             <string>///Execute Player States
 script_execute(state);
-
-
-// Variables for User INPUT
-var up = keyboard_check(vk_up);
-var down = keyboard_check(vk_down);
-var left = keyboard_check(vk_left);
-var right = keyboard_check(vk_right);
-
-if (right)
-{
-    hspd = spd;
-}
-
-if (left)
-{
-    hspd = -spd;
-}
-
-if (up)
-{
-    vspd = -spd;
-}
-
-if (down)
-{
-    vspd = spd;
-}
-
-// Friction
-if (!left &amp;&amp; !right)
-{
-    hspd = 0;
-}
-
-if (!up &amp;&amp; !down)
-{
-    vspd = 0;
-}
-
-// horizontal Collisions
-if place_meeting(x + hspd, y, Solid)
-{
-    while(!place_meeting(x + sign(hspd), y, Solid))
-    {
-        x += sign(hspd);
-    }
-    hspd = 0;
-}
-x += hspd;
-
-
-// Vertical Collisions
-if place_meeting(x, y + vspd, Solid)
-{
-    while(!place_meeting(x, y + sign(vspd), Solid))
-    {
-        y += sign(vspd);
-    }
-    vspd = 0;
-}
-y += vspd;
 </string>
           </argument>
         </arguments>

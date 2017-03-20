@@ -40,6 +40,11 @@ if !(place_meeting(bbox_right + 1, y, Solid))
     sprite_index = spr_ground_01_right;
 }
 
+// detect edge above
+if (place_meeting(x, bbox_top - 1, Solid))
+{
+    sprite_index = spr_ground_01_bottom;
+}
 </string>
           </argument>
         </arguments>

@@ -29,6 +29,12 @@
 player_score = 0;
 player_hp = 5;
 player_time = 0;
+
+// Keys required to unlock the Boss level
+player_has_green_key = false;
+player_has_yellow_key = false;
+player_has_red_key = false;
+player_has_brown_ley = false;
 </string>
           </argument>
         </arguments>
