@@ -21,6 +21,7 @@
       <sprite>sprites\spr_ground_01_left</sprite>
       <sprite>sprites\spr_ground_01_right</sprite>
       <sprite>sprites\spr_ground_01_bottom</sprite>
+      <sprite>sprites\spr_ground_01_alone</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">

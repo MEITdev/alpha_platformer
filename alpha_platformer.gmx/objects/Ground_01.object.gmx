@@ -28,22 +28,34 @@
             <string>///Draw the edges
 draw_self();
 
+// detect ground around
+ground_left = place_meeting(x - 1, y, Solid);
+ground_right = place_meeting(bbox_right + 1, y, Solid);
+ground_top = place_meeting(x, bbox_top - 1, Solid);
+ground_bottom = place_meeting(x, bbox_bottom + 1, Solid);
+
 // detect edge to the left
-if !(place_meeting(x - 1, y, Solid))
+if !(ground_left)
 {
     sprite_index = spr_ground_01_left;
 }
 
 // detect edge to the right
-if !(place_meeting(bbox_right + 1, y, Solid))
+if !(ground_right)
 {
     sprite_index = spr_ground_01_right;
 }
 
 // detect edge above
-if (place_meeting(x, bbox_top - 1, Solid))
+if (ground_top)
 {
     sprite_index = spr_ground_01_bottom;
+}
+
+// when top of a mountain
+if (!ground_top &amp;&amp; !ground_left &amp;&amp; !ground_right)
+{
+    sprite_index = spr_ground_01_alone;
 }
 </string>
           </argument>
