@@ -47,9 +47,12 @@
       <sprite>sprites\spr_green_door_locked</sprite>
       <sprite>sprites\spr_door_unlocked</sprite>
       <sprite>sprites\spr_door_entrance</sprite>
+      <sprite>sprites\spr_green_door_top</sprite>
     </sprites>
     <sprites name="Keys">
       <sprite>sprites\spr_green_key</sprite>
+      <sprite>sprites\spr_key_outline</sprite>
+      <sprite>sprites\spr_red_key</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -106,6 +109,13 @@
     </objects>
     <objects name="Gems">
       <object>objects\BlueGem</object>
+    </objects>
+    <objects name="Doors">
+      <object>objects\EntranceDoor</object>
+      <object>objects\GreenDoor</object>
+    </objects>
+    <objects name="Keys">
+      <object>objects\GreenKey</object>
     </objects>
   </objects>
   <rooms name="rooms">

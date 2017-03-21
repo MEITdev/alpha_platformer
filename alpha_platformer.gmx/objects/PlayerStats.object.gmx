@@ -76,6 +76,16 @@ for (i = 0; i &lt; player_hp; i += 1)
 {
     draw_sprite_ext(spr_hp, 0, 64 + (i * 32), 64, 1, 1, 0, c_white, 1);
 };
+
+// Draw the key outlines
+draw_sprite_ext(spr_key_outline, 0, 64, 128, 1, 1, 0, c_white, 1);
+draw_sprite_ext(spr_key_outline, 0, 128, 128, 1, 1, 0, c_white, 1);
+
+// Draw Green key
+draw_sprite_ext(spr_green_key, 0, 64, 128, 1, 1, 0, c_white, player_has_green_key);
+// Draw Red key
+draw_sprite_ext(spr_red_key, 0, 128, 128, 1, 1, 0, c_white, player_has_red_key);
+
 </string>
           </argument>
         </arguments>
