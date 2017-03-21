@@ -63,6 +63,105 @@ script_execute(state);
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="BlueGem">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collect the gem
+if (instance_exists(PlayerStats))
+{
+    PlayerStats.player_blue_gems += 1;
+}   
+
+// destory the gem
+with (other)
+{
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Enemy_Parent">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collision with an enemy
+var above_enemy = y &lt; other.y + vspd;
+var falling = vspd &gt; 0;
+if (above_enemy &amp;&amp; (falling || state = player_ledge_grab_state))
+{
+    // make sure we do not kill 2 enemies at once
+    if (!place_meeting(x, yprevious, Solid))
+    {
+        y = yprevious;
+    }
+
+    // now move the enemy right on top of the enemy
+    while(!place_meeting(x, y + 1, other))
+    {
+        y++;
+    }
+    
+    // Kill the enemy
+    with(other)
+    {
+        instance_destroy();
+    }
+    
+    vspd = jspd / 1.5;
+}
+else
+{
+    // Take damage
+    if (state != player_hurt_state)
+    {
+        image_blend = make_colour_rgb(220,150,150);
+        vspd = jspd / 2;
+        hspd = sign(x - other.x) * 6;
+        
+        state = player_hurt_state;
+        
+        Move(Solid);
+        
+        if (instance_exists(PlayerStats))
+        {
+            PlayerStats.player_hp -= 1;
+        }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>

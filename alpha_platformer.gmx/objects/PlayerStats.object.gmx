@@ -2,7 +2,7 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -26,13 +26,56 @@
           <argument>
             <kind>1</kind>
             <string>///Initialise the PlayerStats
-player_score = 0;
-player_hp = 5;
+
+// set the GUI size
+display_set_gui_size(view_wview[0], view_hview[0]);
+
+score = 0;
+highscore = 0;
+player_hp = 3;
+player_maxhp = 5;
 player_time = 0;
+player_blue_gems = 0;
 
 // Keys required to unlock the Boss level
 player_has_green_key = false;
 player_has_red_key = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw GUI elements
+
+// Draw health gem outline
+
+for (i = 0; i &lt; player_maxhp; i += 1)
+{
+    draw_sprite_ext(spr_hp_outline, 0, 64 + (i * 32), 64, 1, 1, 0, c_white, 1);
+};
+
+// Draw the health gems
+for (i = 0; i &lt; player_hp; i += 1)
+{
+    draw_sprite_ext(spr_hp, 0, 64 + (i * 32), 64, 1, 1, 0, c_white, 1);
+};
 </string>
           </argument>
         </arguments>
