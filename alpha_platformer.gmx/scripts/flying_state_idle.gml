@@ -8,6 +8,7 @@ if (instance_exists(Player))
     
     if (dis < sight)
     {
+        y += 2;
         state = flying_chase_state;
     }
 }

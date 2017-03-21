@@ -50,7 +50,6 @@ what_sprite = choose(spr_ground_01_bottom, spr_ground_01_circle, spr_ground_01_c
           <argument>
             <kind>1</kind>
             <string>///Draw the edges
-draw_self();
 
 // detect ground around
 ground_left = place_meeting(x - 1, y, Solid);
@@ -81,6 +80,26 @@ if (!ground_top &amp;&amp; !ground_left &amp;&amp; !ground_right)
 {
     sprite_index = spr_ground_01_alone;
 }
+
+// when on the ceiling edge left
+if (!ground_left &amp;&amp; !ground_bottom)
+{
+    sprite_index = spr_ground_01_ceiling_left;
+}
+
+// when on the ceiling edge right
+if (!ground_right &amp;&amp; !ground_bottom)
+{
+    sprite_index = spr_ground_01_ceiling_right;
+}
+
+// when the only thing hanging from the ceiling
+if (!ground_bottom &amp;&amp; !ground_left &amp;&amp; !ground_right)
+{
+    sprite_index = spr_ground_01_ceiling_alone;
+}
+
+draw_self();
 </string>
           </argument>
         </arguments>

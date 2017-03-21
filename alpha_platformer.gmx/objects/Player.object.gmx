@@ -63,6 +63,35 @@ script_execute(state);
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="GreenDoor">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Go to the next level if door unlocked
+
+if (keyboard_check(vk_up) &amp;&amp; PlayerStats.player_has_green_key == true)
+{
+    y = yprevious;
+    state = player_exit_state;    
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="BlueGem">
       <action>
         <libid>1</libid>

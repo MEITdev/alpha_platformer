@@ -25,11 +25,15 @@
       <sprite>sprites\spr_solid</sprite>
       <sprite>sprites\spr_ground_01_center</sprite>
       <sprite>sprites\spr_ground_01_left</sprite>
+      <sprite>sprites\spr_ground_01_ceiling_right</sprite>
+      <sprite>sprites\spr_ground_01_ceiling_left</sprite>
       <sprite>sprites\spr_ground_01_right</sprite>
       <sprite>sprites\spr_ground_01_bottom</sprite>
       <sprite>sprites\spr_ground_01_alone</sprite>
+      <sprite>sprites\spr_ground_01_ceiling_alone</sprite>
       <sprite>sprites\spr_ground_01_circle</sprite>
       <sprite>sprites\spr_ground_01_circle_full</sprite>
+      <sprite>sprites\spr_ground_01_ceiling</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>
@@ -44,10 +48,11 @@
       <sprite>sprites\spr_blue_gem</sprite>
     </sprites>
     <sprites name="Doors">
-      <sprite>sprites\spr_green_door_locked</sprite>
-      <sprite>sprites\spr_door_unlocked</sprite>
       <sprite>sprites\spr_door_entrance</sprite>
+      <sprite>sprites\spr_green_door_locked</sprite>
       <sprite>sprites\spr_green_door_top</sprite>
+      <sprite>sprites\spr_door_unlocked_top</sprite>
+      <sprite>sprites\spr_door_unlocked</sprite>
     </sprites>
     <sprites name="Keys">
       <sprite>sprites\spr_green_key</sprite>
@@ -66,6 +71,7 @@
       <script>scripts\player_move_state.gml</script>
       <script>scripts\player_ledge_grab_state.gml</script>
       <script>scripts\player_hurt_state.gml</script>
+      <script>scripts\player_exit_state.gml</script>
     </scripts>
     <scripts name="Helper Scripts">
       <script>scripts\Move.gml</script>
@@ -121,6 +127,7 @@
   <rooms name="rooms">
     <room>rooms\rm_one</room>
     <room>rooms\rm_two</room>
+    <room>rooms\rm_three</room>
     <rooms name="templates">
       <room>rooms\rm_blank</room>
     </rooms>
