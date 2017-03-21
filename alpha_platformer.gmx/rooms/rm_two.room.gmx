@@ -3,7 +3,7 @@
   <caption></caption>
   <width>1280</width>
   <height>960</height>
-  <vsnap>64</vsnap>
+  <vsnap>2</vsnap>
   <hsnap>64</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Player" x="225" y="744" name="inst_1B18ED1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Player" x="161" y="744" name="inst_1B18ED1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="0" y="896" name="inst_F68E68EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="128" y="896" name="inst_E3A042FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="64" y="896" name="inst_150CAD5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -78,7 +78,7 @@
     <instance objName="Ground_01" x="0" y="576" name="inst_8A579335" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="0" y="512" name="inst_88C00D2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="64" y="832" name="inst_E85D5A30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="EntranceDoor" x="128" y="704" name="inst_375463AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="EntranceDoor" x="64" y="704" name="inst_375463AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GreenDoor" x="960" y="576" name="inst_A9A172B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="128" y="832" name="inst_51E02077" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="192" y="832" name="inst_A184524F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -103,7 +103,6 @@
     <instance objName="Ground_01" x="704" y="832" name="inst_7BE1BBA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="256" y="768" name="inst_63CD2E9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="320" y="768" name="inst_A253951D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_01" x="384" y="768" name="inst_148B4309" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="768" y="832" name="inst_4CCC4C84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="832" y="832" name="inst_A70E88A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="896" y="832" name="inst_E4219C64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -113,7 +112,6 @@
     <instance objName="Ground_01" x="1152" y="832" name="inst_275D65D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="1216" y="448" name="inst_654F25C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="1216" y="384" name="inst_AD1A2DBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_01" x="1216" y="320" name="inst_BC9AC7CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="704" y="768" name="inst_BAC0C36B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="768" y="768" name="inst_C1D72029" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="832" y="768" name="inst_65F9E746" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -121,12 +119,10 @@
     <instance objName="Ground_01" x="960" y="768" name="inst_AF267C74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="1024" y="768" name="inst_B633354B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="1088" y="768" name="inst_FC22FA74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_01" x="768" y="704" name="inst_91E063C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="832" y="704" name="inst_C7B45909" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="896" y="704" name="inst_BE973FE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="960" y="704" name="inst_FB646A02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="1024" y="704" name="inst_E011CDC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Ground_01" x="832" y="640" name="inst_29460245" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="896" y="640" name="inst_CECCC099" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="960" y="640" name="inst_D40B0679" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="1024" y="640" name="inst_561C251D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

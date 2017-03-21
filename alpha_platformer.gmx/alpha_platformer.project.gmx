@@ -20,6 +20,8 @@
     <sprites name="GUI Icons">
       <sprite>sprites\spr_hp</sprite>
       <sprite>sprites\spr_hp_outline</sprite>
+      <sprite>sprites\spr_gems</sprite>
+      <sprite>sprites\spr_gems_outline</sprite>
     </sprites>
     <sprites name="Level">
       <sprite>sprites\spr_solid</sprite>
@@ -53,6 +55,8 @@
       <sprite>sprites\spr_green_door_top</sprite>
       <sprite>sprites\spr_door_unlocked_top</sprite>
       <sprite>sprites\spr_door_unlocked</sprite>
+      <sprite>sprites\spr_red_door_locked</sprite>
+      <sprite>sprites\spr_red_door_top</sprite>
     </sprites>
     <sprites name="Keys">
       <sprite>sprites\spr_green_key</sprite>
@@ -119,9 +123,11 @@
     <objects name="Doors">
       <object>objects\EntranceDoor</object>
       <object>objects\GreenDoor</object>
+      <object>objects\RedDoor</object>
     </objects>
     <objects name="Keys">
       <object>objects\GreenKey</object>
+      <object>objects\RedKey</object>
     </objects>
   </objects>
   <rooms name="rooms">
