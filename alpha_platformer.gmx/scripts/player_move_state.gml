@@ -52,26 +52,22 @@ else
     }
 }
 
-if (right)
+if (right || left)
 {
-    hspd = spd;
+    hspd += (right - left) * acc;
+    
+    if (hspd > spd) hspd = spd; // cap the speed to max speed
+    if (hspd < -spd) hspd = -spd;
 }
-
-if (left)
+else
 {
-    hspd = -spd;
+    apply_friction(acc);
 }
 
 // Flip the image sprite in the right direction
 if (hspd != 0)
 {
     image_xscale = sign(hspd);
-}
-
-// Friction
-if (!left && !right)
-{
-    hspd = 0;
 }
 
 Move(Solid);

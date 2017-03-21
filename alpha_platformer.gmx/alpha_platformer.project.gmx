@@ -23,6 +23,17 @@
       <sprite>sprites\spr_ground_01_bottom</sprite>
       <sprite>sprites\spr_ground_01_alone</sprite>
     </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\spr_floating</sprite>
+      <sprite>sprites\spr_floating_idle</sprite>
+      <sprite>sprites\spr_flying</sprite>
+      <sprite>sprites\spr_flying_idle</sprite>
+      <sprite>sprites\spr_walking</sprite>
+      <sprite>sprites\spr_walking_dead</sprite>
+      <sprite>sprites\spr_spiking_idle</sprite>
+      <sprite>sprites\spr_spiking_attack</sprite>
+      <sprite>sprites\spr_enemy_mask</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_one</background>
@@ -37,6 +48,24 @@
     </scripts>
     <scripts name="Helper Scripts">
       <script>scripts\Move.gml</script>
+      <script>scripts\apply_friction.gml</script>
+      <script>scripts\Move_bounce.gml</script>
+    </scripts>
+    <scripts name="Walking States">
+      <script>scripts\walking_move_right_state.gml</script>
+      <script>scripts\walking_move_left_state.gml</script>
+    </scripts>
+    <scripts name="Flying States">
+      <script>scripts\flying_state_idle.gml</script>
+      <script>scripts\flying_chase_state.gml</script>
+    </scripts>
+    <scripts name="Spiking States">
+      <script>scripts\spiking_idle_state.gml</script>
+      <script>scripts\spiking_attack_state.gml</script>
+    </scripts>
+    <scripts name="Floating States">
+      <script>scripts\floating_idle_state.gml</script>
+      <script>scripts\floating_jump_state.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -48,6 +77,12 @@
       <object>objects\Solid</object>
       <object>objects\Ground_01</object>
       <object>objects\Background</object>
+    </objects>
+    <objects name="Enemies">
+      <object>objects\Walker</object>
+      <object>objects\Flying</object>
+      <object>objects\Spiking</object>
+      <object>objects\Floating</object>
     </objects>
   </objects>
   <rooms name="rooms">
