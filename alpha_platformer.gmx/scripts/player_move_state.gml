@@ -1,12 +1,6 @@
 ///player_move_state()
 
 // Variables for User INPUT
-var up = keyboard_check(vk_up);
-var up_release = keyboard_check_released(vk_up);
-var down = keyboard_check(vk_down);
-var left = keyboard_check(vk_left);
-var right = keyboard_check(vk_right);
-
 if (!place_meeting(x, y + 1, Solid))
 {
     vspd += grav;

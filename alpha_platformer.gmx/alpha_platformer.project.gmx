@@ -71,17 +71,18 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="Player States">
-      <script>scripts\player_move_state.gml</script>
-      <script>scripts\player_ledge_grab_state.gml</script>
-      <script>scripts\player_hurt_state.gml</script>
-      <script>scripts\player_exit_state.gml</script>
-    </scripts>
     <scripts name="Helper Scripts">
       <script>scripts\Move.gml</script>
       <script>scripts\Direction_move_bounce.gml</script>
       <script>scripts\apply_friction.gml</script>
       <script>scripts\Move_bounce.gml</script>
+      <script>scripts\get_input.gml</script>
+    </scripts>
+    <scripts name="Player States">
+      <script>scripts\player_move_state.gml</script>
+      <script>scripts\player_ledge_grab_state.gml</script>
+      <script>scripts\player_hurt_state.gml</script>
+      <script>scripts\player_exit_state.gml</script>
     </scripts>
     <scripts name="Walking States">
       <script>scripts\walking_move_right_state.gml</script>
