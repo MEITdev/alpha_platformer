@@ -4,7 +4,12 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_jump</sound>
+    <sound>sound\snd_exit</sound>
+    <sound>sound\snd_collect</sound>
+    <sound>sound\snd_hurt</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Enemies">
       <sprite>sprites\spr_floating</sprite>
