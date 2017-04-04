@@ -76,6 +76,13 @@
     <sprites name="Effects">
       <sprite>sprites\spr_gem_particle</sprite>
     </sprites>
+    <sprites name="Boss">
+      <sprite>sprites\spr_boss_idle</sprite>
+      <sprite>sprites\spr_boss_move</sprite>
+      <sprite>sprites\spr_boss_attack</sprite>
+      <sprite>sprites\spr_boss_hurt</sprite>
+      <sprite>sprites\spr_boss_dead</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_one</background>
