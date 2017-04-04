@@ -89,7 +89,6 @@
     <instance objName="Ground_01" x="0" y="576" name="inst_8A579335" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="0" y="512" name="inst_88C00D2C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="64" y="832" name="inst_E85D5A30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PlayerStats" x="256" y="704" name="inst_6A31191B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="EntranceDoor" x="128" y="768" name="inst_375463AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GreenDoor" x="1024" y="704" name="inst_A9A172B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GreenKey" x="576" y="512" name="inst_0953BE09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

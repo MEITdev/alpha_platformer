@@ -93,34 +93,49 @@ audio_play_sound_on(audio_em, snd_theme_song, true, 10);
           <argument>
             <kind>1</kind>
             <string>///Draw GUI elements
-
-// Draw health gem outline
-
-for (i = 0; i &lt; player_maxhp; i += 1)
+switch(room)
 {
-    draw_sprite_ext(spr_hp_outline, 0, 64 + (i * 32), 64, 1, 1, 0, c_white, 1);
-};
+    case rm_menu:
+        // Draw the text
+        draw_set_font(fnt_title);
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_center);
+        draw_text_colour(room_width/2 + 4, 128 + 4, "Alpha#Platformer", c_black, c_black, c_black, c_black, .5);
 
-// Draw the health gems
-for (i = 0; i &lt; player_hp; i += 1)
-{
-    draw_sprite_ext(spr_hp, 0, 64 + (i * 32), 64, 1, 1, 0, c_white, 1);
-};
+        draw_text_colour(room_width/2, 128, "Alpha#Platformer", c_white, c_white, c_white, c_white, 1);
+        break;
+                
+    default:
+        // Draw health gem outline
+        for (i = 0; i &lt; player_maxhp; i += 1)
+        {
+            draw_sprite_ext(spr_hp_outline, 0, 64 + (i * 32), 64, 1, 1, 0, c_white, 1);
+        };
+        
+        // Draw the health gems
+        for (i = 0; i &lt; player_hp; i += 1)
+        {
+            draw_sprite_ext(spr_hp, 0, 64 + (i * 32), 64, 1, 1, 0, c_white, 1);
+        };
+        
+        // Draw the number of collected Gems
+        draw_sprite_ext(spr_gems, 0, 64, 96, 1, 1, 0, c_white, 1);
+        draw_sprite_ext(spr_gems_outline, 0, 64, 96, 1, 1, 0, c_white, 1);
+        
+        draw_text(128, 96, string(player_blue_gems));
+        
+        // Draw the key outlines
+        draw_sprite_ext(spr_key_outline, 0, 64, 156, 1, 1, 0, c_white, 1);
+        draw_sprite_ext(spr_key_outline, 0, 128, 156, 1, 1, 0, c_white, 1);
+        
+        // Draw Green key
+        draw_sprite_ext(spr_green_key, 0, 64, 156, 1, 1, 0, c_white, player_has_green_key);
+        // Draw Red key
+        draw_sprite_ext(spr_red_key, 0, 128, 156, 1, 1, 0, c_white, player_has_red_key);
 
-// Draw the number of collected Gems
-draw_sprite_ext(spr_gems, 0, 64, 96, 1, 1, 0, c_white, 1);
-draw_sprite_ext(spr_gems_outline, 0, 64, 96, 1, 1, 0, c_white, 1);
+        break;
+}
 
-draw_text(128, 96, string(player_blue_gems));
-
-// Draw the key outlines
-draw_sprite_ext(spr_key_outline, 0, 64, 156, 1, 1, 0, c_white, 1);
-draw_sprite_ext(spr_key_outline, 0, 128, 156, 1, 1, 0, c_white, 1);
-
-// Draw Green key
-draw_sprite_ext(spr_green_key, 0, 64, 156, 1, 1, 0, c_white, player_has_green_key);
-// Draw Red key
-draw_sprite_ext(spr_red_key, 0, 128, 156, 1, 1, 0, c_white, player_has_red_key);
 
 </string>
           </argument>
