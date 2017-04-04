@@ -46,6 +46,8 @@
       <sprite>sprites\spr_ground_01_circle</sprite>
       <sprite>sprites\spr_ground_01_circle_full</sprite>
       <sprite>sprites\spr_ground_01_ceiling</sprite>
+      <sprite>sprites\spr_water_top</sprite>
+      <sprite>sprites\spr_water</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>
@@ -121,6 +123,9 @@
       <script>scripts\floating_idle_state.gml</script>
       <script>scripts\floating_jump_state.gml</script>
     </scripts>
+    <scripts name="Boss States">
+      <script>scripts\boss_idle_state.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
@@ -156,6 +161,9 @@
     <objects name="Keys">
       <object>objects\GreenKey</object>
       <object>objects\RedKey</object>
+    </objects>
+    <objects name="Boss">
+      <object>objects\Boss</object>
     </objects>
   </objects>
   <rooms name="rooms">
