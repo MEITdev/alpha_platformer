@@ -148,8 +148,8 @@ switch(room)
         }
         
         draw_set_font(fnt_start);
-        draw_text_colour(room_width/2 + 4, room_height - 128 + 4, str, c_black, c_black, c_black, c_black, .5);
-        draw_text_colour(room_width/2, room_height-128, str, c_white, c_white, c_white, c_white, 1);
+        draw_text_colour(room_width/2 + 4, room_height /2 + 4, str, c_black, c_black, c_black, c_black, .5);
+        draw_text_colour(room_width/2, room_height/2, str, c_white, c_white, c_white, c_white, 1);
         
         break;
                 
