@@ -73,6 +73,9 @@
       <sprite>sprites\spr_key_outline</sprite>
       <sprite>sprites\spr_red_key</sprite>
     </sprites>
+    <sprites name="Effects">
+      <sprite>sprites\spr_gem_particle</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_one</background>
@@ -136,6 +139,7 @@
     </objects>
     <objects name="Gems">
       <object>objects\BlueGem</object>
+      <object>objects\BlueGemParticle</object>
     </objects>
     <objects name="Doors">
       <object>objects\EntranceDoor</object>

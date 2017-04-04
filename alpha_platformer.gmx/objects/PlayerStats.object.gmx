@@ -76,6 +76,8 @@ if (start == true) &amp;&amp; room == rm_menu
 {
     room_goto(rm_one);   
 }
+
+player_time += 1; // Increase the time counter
 </string>
           </argument>
         </arguments>
