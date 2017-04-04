@@ -112,6 +112,8 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
+    <font>fonts\fnt_start</font>
+    <font>fonts\fnt_gui</font>
   </fonts>
   <objects name="objects">
     <objects name="Player">

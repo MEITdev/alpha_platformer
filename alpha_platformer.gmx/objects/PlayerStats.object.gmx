@@ -47,6 +47,40 @@ player_has_red_key = false;
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// To start the game
+var start = keyboard_check_pressed(vk_space);
+
+if (gamepad_is_connected(0))
+{
+    start = gamepad_button_check_pressed(0, gp_start);
+}
+
+if (start == true) &amp;&amp; room == rm_menu
+{
+    room_goto(rm_one);   
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="2">
       <action>
         <libid>1</libid>
@@ -101,8 +135,22 @@ switch(room)
         draw_set_halign(fa_center);
         draw_set_valign(fa_center);
         draw_text_colour(room_width/2 + 4, 128 + 4, "Alpha#Platformer", c_black, c_black, c_black, c_black, .5);
-
         draw_text_colour(room_width/2, 128, "Alpha#Platformer", c_white, c_white, c_white, c_white, 1);
+        
+        var str;
+        if (gamepad_is_connected(0))
+        {
+            str = "Press [START] to play!";
+        }
+        else
+        {
+            str = "Press [SPACE] to play!";
+        }
+        
+        draw_set_font(fnt_start);
+        draw_text_colour(room_width/2 + 4, room_height - 128 + 4, str, c_black, c_black, c_black, c_black, .5);
+        draw_text_colour(room_width/2, room_height-128, str, c_white, c_white, c_white, c_white, 1);
+        
         break;
                 
     default:
