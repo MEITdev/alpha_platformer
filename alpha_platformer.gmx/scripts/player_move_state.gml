@@ -69,7 +69,7 @@ if (hspd != 0)
 if (place_meeting(x, y+ vspd, Solid) && vspd > 0)
 {
     audio_emitter_pitch(audio_em, random_range(0.8, 1.2));
-    audio_emitter_gain(audio_em, random_range(0.2, 0.5));
+    audio_emitter_gain(audio_em, random_range(0.1, 0.3));
     audio_play_sound_on(audio_em, snd_step, false, 5);
 }
 
