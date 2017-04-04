@@ -12,6 +12,7 @@
     <sound>sound\snd_theme_song</sound>
     <sound>sound\snd_enemy_hurt</sound>
     <sound>sound\snd_step</sound>
+    <sound>sound\snd_door_opens</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Enemies">
@@ -19,6 +20,7 @@
       <sprite>sprites\spr_floating_idle</sprite>
       <sprite>sprites\spr_flying</sprite>
       <sprite>sprites\spr_flying_idle</sprite>
+      <sprite>sprites\spr_flying_dead</sprite>
       <sprite>sprites\spr_walking</sprite>
       <sprite>sprites\spr_walking_dead</sprite>
       <sprite>sprites\spr_spiking_idle</sprite>

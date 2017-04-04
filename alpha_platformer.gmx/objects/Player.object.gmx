@@ -129,6 +129,9 @@ if (up &amp;&amp; PlayerStats.player_has_green_key == true)
 if (instance_exists(PlayerStats))
 {
     PlayerStats.player_blue_gems += 1;
+    // Play the gem collected sound
+    audio_emitter_pitch(audio_em, random_range(0.9, 1.1));
+    audio_play_sound_on(audio_em, snd_collect, false, 6);
 }   
 
 // destory the gem
@@ -175,16 +178,17 @@ if (above_enemy &amp;&amp; (falling || state = player_ledge_grab_state))
         y++;
     }
     
+    // Bounce off the enemy
+    vspd = jspd / 1.5;
+    // Play the sound
+    audio_play_sound(snd_enemy_hurt, 5, false);
+        
     // Kill the enemy
     with(other)
     {
         instance_destroy();
     }
-    
-    // Bounce off the enemy
-    vspd = jspd / 1.5;
-    // Play the sound
-    audio_play_sound(snd_enemy_hurt, 5, false);
+
 }
 else
 {

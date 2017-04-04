@@ -30,6 +30,8 @@
 if (PlayerStats.player_has_red_key == true)
 {
     sprite_index = spr_door_unlocked;
+    
+
 }
 else
 {

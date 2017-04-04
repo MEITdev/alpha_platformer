@@ -29,6 +29,7 @@
 
 if (PlayerStats.player_has_green_key == true)
 {
+    ///Open the door
     sprite_index = spr_door_unlocked;
 }
 else

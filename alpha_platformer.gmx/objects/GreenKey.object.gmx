@@ -28,6 +28,13 @@
             <string>///Unlock the Green Door
 PlayerStats.player_has_green_key = true;
 
+// Play the collect sound
+audio_play_sound(snd_collect, 6, false);
+
+// Play the unlock sound
+audio_play_sound(snd_door_opens, 6, false);
+
+    
 // destroy the instance
 instance_destroy();
 </string>
