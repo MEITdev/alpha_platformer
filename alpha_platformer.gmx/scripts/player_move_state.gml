@@ -65,6 +65,14 @@ if (hspd != 0)
     image_xscale = sign(hspd);
 }
 
+// Play the landing sound
+if (place_meeting(x, y+ vspd, Solid) && vspd > 0)
+{
+    audio_emitter_pitch(audio_em, random_range(0.8, 1.2));
+    audio_emitter_gain(audio_em, random_range(0.2, 0.5));
+    audio_play_sound_on(audio_em, snd_step, false, 5);
+}
+
 Move(Solid);
 
 // Check for ledge grab state
@@ -93,4 +101,10 @@ if (falling && wasnt_wall && is_wall)
     sprite_index = spr_player_grab;
     image_speed = .1;
     state = player_ledge_grab_state;
+    
+    // Play the ledge grab sound
+    audio_emitter_pitch(audio_em, 1.5);
+    audio_emitter_gain(audio_em, .1);
+    audio_play_sound_on(audio_em, snd_step, false, 5);
+    
 }

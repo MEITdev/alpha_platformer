@@ -11,6 +11,7 @@
     <sound>sound\snd_hurt</sound>
     <sound>sound\snd_theme_song</sound>
     <sound>sound\snd_enemy_hurt</sound>
+    <sound>sound\snd_step</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Enemies">
