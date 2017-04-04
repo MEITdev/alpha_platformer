@@ -93,7 +93,12 @@ script_execute(state);
 if (up &amp;&amp; PlayerStats.player_has_green_key == true)
 {
     y = yprevious;
-    state = player_exit_state;    
+    state = player_exit_state; 
+    if (audio_is_playing(snd_jump))
+    {
+        audio_stop_sound(snd_jump);
+    }
+    audio_play_sound(snd_exit, 5, false);   
 }
 </string>
           </argument>
@@ -173,7 +178,10 @@ if (above_enemy &amp;&amp; (falling || state = player_ledge_grab_state))
         instance_destroy();
     }
     
+    // Bounce off the enemy
     vspd = jspd / 1.5;
+    // Play the sound
+    audio_play_sound(snd_enemy_hurt, 5, false);
 }
 else
 {

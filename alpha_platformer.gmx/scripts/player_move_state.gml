@@ -32,6 +32,7 @@ else
     if (up)
     {
         vspd = jspd;
+        audio_play_sound(snd_jump, 5, false);
     }
     
     if (hspd == 0)

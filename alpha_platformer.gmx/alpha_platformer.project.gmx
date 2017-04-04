@@ -9,6 +9,8 @@
     <sound>sound\snd_exit</sound>
     <sound>sound\snd_collect</sound>
     <sound>sound\snd_hurt</sound>
+    <sound>sound\snd_theme_song</sound>
+    <sound>sound\snd_enemy_hurt</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Enemies">
