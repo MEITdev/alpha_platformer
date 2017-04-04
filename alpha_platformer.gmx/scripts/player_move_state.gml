@@ -66,7 +66,7 @@ if (hspd != 0)
 }
 
 // Play the landing sound
-if (place_meeting(x, y+ vspd, Solid) && vspd > 0)
+if (place_meeting(x, y+ vspd + 1, Solid) && vspd > 0)
 {
     audio_emitter_pitch(audio_em, random_range(0.8, 1.2));
     audio_emitter_gain(audio_em, random_range(0.1, 0.3));

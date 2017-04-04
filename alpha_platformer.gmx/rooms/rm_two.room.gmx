@@ -3,7 +3,7 @@
   <caption></caption>
   <width>1280</width>
   <height>960</height>
-  <vsnap>2</vsnap>
+  <vsnap>1</vsnap>
   <hsnap>64</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="Player" x="161" y="744" name="inst_1B18ED1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Player" x="161" y="743" name="inst_1B18ED1B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="0" y="896" name="inst_F68E68EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="128" y="896" name="inst_E3A042FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="64" y="896" name="inst_150CAD5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
