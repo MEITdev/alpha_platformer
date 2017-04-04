@@ -157,9 +157,6 @@
     <room>rooms\rm_one</room>
     <room>rooms\rm_two</room>
     <room>rooms\rm_three</room>
-    <rooms name="templates">
-      <room>rooms\rm_blank</room>
-    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

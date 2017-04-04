@@ -157,7 +157,21 @@ switch(room)
         draw_text_colour(room_width/2, room_height/2, str, c_white, c_white, c_white, c_white, 1);
         
         break;
-                
+               
+    case rm_highscore:
+        draw_set_halign(fa_center);
+        draw_set_valign(fa_center);
+        draw_set_font(fnt_start);
+        
+        draw_text_colour(room_width/2 + 4, 32 + 4, "Your Score: " + string(score), c_black, c_black, c_black, c_black, 0.5);
+        draw_text_colour(room_width/2, 32, "Your Score: " + string(score), c_white, c_white, c_white, c_white, 1);
+        
+        draw_text_colour(room_width/2 + 4, room_height/2 + 4, "Best Score: " + string(PlayerStats.highscore), c_black, c_black, c_black, c_black, 0.5);
+        draw_text_colour(room_width/2, room_height/2, "Best Score: " + string(PlayerStats.highscore), c_white, c_white, c_white, c_white, 1);
+        
+        
+        break;
+         
     default:
         // Draw health gem outline
         for (i = 0; i &lt; player_maxhp; i += 1)
