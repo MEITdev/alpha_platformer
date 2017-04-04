@@ -11,6 +11,8 @@ else
     }
     else
     {
-        game_restart();
+        // calculate the players high score
+        score = remaining_time + PlayerStats.player_blue_gems * 3;
+        room_goto(rm_highscore);
     }
 }
