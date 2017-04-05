@@ -8,7 +8,7 @@ if (state != player_hurt_state)
     audio_play_sound_on(audio_em, snd_hurt, false, 5);
     
     image_blend = make_colour_rgb(220,150,150);
-    vspd = jspd / 2;
+    vspd = jspd / 1.25;
     hspd = sign(x - other.x) * 6;
     
     state = player_hurt_state;

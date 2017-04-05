@@ -240,7 +240,7 @@ if (above_enemy &amp;&amp; (falling || state = player_ledge_grab_state)) &amp;&a
     }
     
     // Bounce off the enemy
-    vspd = jspd / 1.5;
+    vspd = jspd / 1.25;
     // Play the sound
     audio_play_sound(snd_enemy_hurt, 5, false);
         

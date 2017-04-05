@@ -81,6 +81,11 @@ if (!ground_top &amp;&amp; !ground_left &amp;&amp; !ground_right)
     sprite_index = spr_ground_01_alone;
 }
 
+// when the only thing hanging from the ceiling
+if (!ground_bottom)
+{
+    sprite_index = spr_ground_01_ceiling;
+}
 // when on the ceiling edge left
 if (!ground_left &amp;&amp; !ground_bottom)
 {
@@ -92,6 +97,7 @@ if (!ground_right &amp;&amp; !ground_bottom)
 {
     sprite_index = spr_ground_01_ceiling_right;
 }
+
 
 // when the only thing hanging from the ceiling
 if (!ground_bottom &amp;&amp; !ground_left &amp;&amp; !ground_right)
