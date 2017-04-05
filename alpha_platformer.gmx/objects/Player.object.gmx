@@ -73,6 +73,45 @@ script_execute(state);
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="RedGem">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Collect the gem
+if (instance_exists(PlayerStats))
+{
+    if PlayerStats.player_hp &lt; PlayerStats.player_maxhp
+    {
+        PlayerStats.player_hp += 1;
+    }
+    // Play the gem collected sound
+    audio_emitter_pitch(audio_em, random_range(0.9, 1.1));
+    audio_play_sound_on(audio_em, snd_collect, false, 6);
+}   
+
+// destory the gem
+with (other)
+{
+    instance_destroy();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="Lava">
       <action>
         <libid>1</libid>
@@ -186,7 +225,7 @@ with (other)
             <string>/// Collision with an enemy
 var above_enemy = y &lt; other.y + vspd;
 var falling = vspd &gt; 0;
-if (above_enemy &amp;&amp; (falling || state = player_ledge_grab_state))
+if (above_enemy &amp;&amp; (falling || state = player_ledge_grab_state)) &amp;&amp; (other.canBeDamaged == true)
 {
     // make sure we do not kill 2 enemies at once
     if (!place_meeting(x, yprevious, Solid))

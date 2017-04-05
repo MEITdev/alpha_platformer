@@ -86,6 +86,33 @@ if (start == true) &amp;&amp; room == rm_menu
         </arguments>
       </action>
     </event>
+    <event eventtype="5" enumb="82">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Start the game again
+if room == rm_highscore
+{
+    game_restart();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="2">
       <action>
         <libid>1</libid>
@@ -169,6 +196,10 @@ switch(room)
         draw_text_colour(room_width/2 + 4, room_height/2 + 4, "Best Score: " + string(PlayerStats.highscore), c_black, c_black, c_black, c_black, 0.5);
         draw_text_colour(room_width/2, room_height/2, "Best Score: " + string(PlayerStats.highscore), c_white, c_white, c_white, c_white, 1);
         
+        draw_text_colour(room_width/2 + 4, room_height-28, "[ESC] to quit / [R] to try again" + string(PlayerStats.highscore), c_black, c_black, c_black, c_black, 0.5);
+        draw_text_colour(room_width/2, room_height-32, "[ESC] to quit / [R] to try again" + string(PlayerStats.highscore), c_white, c_white, c_white, c_white, 1);
+        
+        
         
         break;
          
@@ -198,13 +229,9 @@ switch(room)
         
         // Draw the key outlines
         draw_sprite_ext(spr_key_outline, 0, 64, 156, 1, 1, 0, c_white, 1);
-        draw_sprite_ext(spr_key_outline, 0, 112, 156, 1, 1, 0, c_white, 1);
         
         // Draw Green key
         draw_sprite_ext(spr_green_key, 0, 64, 156, 1, 1, 0, c_white, player_has_green_key);
-        // Draw Red key
-        draw_sprite_ext(spr_red_key, 0, 112, 156, 1, 1, 0, c_white, player_has_red_key);
-
         
         player_time += 1; // Increase the time counter
         

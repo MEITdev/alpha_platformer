@@ -28,6 +28,8 @@
             <string>///Initialise Flying
 image_speed = .2;
 
+canBeDamaged = true;
+
 hspd = 0;
 vspd = 0;
 spd = 2;

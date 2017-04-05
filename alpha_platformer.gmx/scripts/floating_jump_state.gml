@@ -2,6 +2,8 @@
 sprite_index = spr_floating;
 image_speed = .2;
 
+canBeDamaged = false;
+
 //Apply gravity
 if (!place_meeting(x, y + 1, Solid))
 {

@@ -1,6 +1,9 @@
 ///floating_idle_state()
 if (instance_exists(Player))
 {
+
+    canBeDamaged = true;
+
     var dis = distance_to_object(Player);
     
     // Check for distance

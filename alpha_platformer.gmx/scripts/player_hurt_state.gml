@@ -27,7 +27,7 @@ if (hspd == 0 && vspd == 0)
     if PlayerStats.player_hp <= 0
     {
         PlayerStats.player_blue_gems = 0;
-        PlayerStats.hp = PlayerStats.player_maxhp;
+        PlayerStats.player_hp = PlayerStats.player_maxhp;
         if (audio_is_playing(snd_music_boss))
         {
             audio_stop_sound(snd_music_boss);
