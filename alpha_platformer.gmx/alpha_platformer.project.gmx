@@ -125,7 +125,10 @@
     </scripts>
     <scripts name="Boss States">
       <script>scripts\boss_idle_state.gml</script>
-      <script>scripts\boss_lift_state.gml</script>
+      <script>scripts\boss_jump_state.gml</script>
+      <script>scripts\boss_chase_state.gml</script>
+      <script>scripts\boss_attack_state.gml</script>
+      <script>scripts\boss_defend_state.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
