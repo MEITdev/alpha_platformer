@@ -47,7 +47,6 @@
       <sprite>sprites\spr_ground_01_circle</sprite>
       <sprite>sprites\spr_ground_01_circle_full</sprite>
       <sprite>sprites\spr_ground_01_ceiling</sprite>
-      <sprite>sprites\spr_lava_top</sprite>
       <sprite>sprites\spr_lava</sprite>
     </sprites>
     <sprites name="Player">
@@ -78,13 +77,7 @@
     </sprites>
     <sprites name="Effects">
       <sprite>sprites\spr_gem_particle</sprite>
-    </sprites>
-    <sprites name="Boss">
-      <sprite>sprites\spr_boss_idle</sprite>
-      <sprite>sprites\spr_boss_move</sprite>
-      <sprite>sprites\spr_boss_attack</sprite>
-      <sprite>sprites\spr_boss_hurt</sprite>
-      <sprite>sprites\spr_boss_dead</sprite>
+      <sprite>sprites\spr_fire_bubble</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -101,6 +94,7 @@
       <script>scripts\apply_friction.gml</script>
       <script>scripts\Move_bounce.gml</script>
       <script>scripts\get_input.gml</script>
+      <script>scripts\take_damage.gml</script>
     </scripts>
     <scripts name="Player States">
       <script>scripts\player_move_state.gml</script>
@@ -124,13 +118,6 @@
       <script>scripts\floating_idle_state.gml</script>
       <script>scripts\floating_jump_state.gml</script>
     </scripts>
-    <scripts name="Boss States">
-      <script>scripts\boss_idle_state.gml</script>
-      <script>scripts\boss_jump_state.gml</script>
-      <script>scripts\boss_chase_state.gml</script>
-      <script>scripts\boss_attack_state.gml</script>
-      <script>scripts\boss_defend_state.gml</script>
-    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_title</font>
@@ -146,6 +133,8 @@
       <object>objects\Solid</object>
       <object>objects\Ground_01</object>
       <object>objects\Background</object>
+      <object>objects\Lava</object>
+      <object>objects\LavaParticles</object>
     </objects>
     <objects name="Enemies">
       <object>objects\Enemy_Parent</object>
@@ -167,15 +156,11 @@
       <object>objects\GreenKey</object>
       <object>objects\RedKey</object>
     </objects>
-    <objects name="Boss">
-      <object>objects\Boss</object>
-    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_highscore</room>
     <room>rooms\rm_one</room>
-    <room>rooms\rm_boss</room>
     <room>rooms\rm_two</room>
     <room>rooms\rm_three</room>
   </rooms>
