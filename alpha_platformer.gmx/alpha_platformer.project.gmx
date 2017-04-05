@@ -46,8 +46,8 @@
       <sprite>sprites\spr_ground_01_circle</sprite>
       <sprite>sprites\spr_ground_01_circle_full</sprite>
       <sprite>sprites\spr_ground_01_ceiling</sprite>
-      <sprite>sprites\spr_water_top</sprite>
-      <sprite>sprites\spr_water</sprite>
+      <sprite>sprites\spr_lava_top</sprite>
+      <sprite>sprites\spr_lava</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>
@@ -125,6 +125,7 @@
     </scripts>
     <scripts name="Boss States">
       <script>scripts\boss_idle_state.gml</script>
+      <script>scripts\boss_lift_state.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
