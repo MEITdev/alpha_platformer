@@ -36,6 +36,9 @@ spd = 6;
 acc = 2;
 grav = 1;
 
+// create audio emitter
+audio_em = audio_emitter_create();
+
 state = floating_idle_state;
 </string>
           </argument>

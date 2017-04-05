@@ -28,6 +28,9 @@
             <string>///Initialise Flying
 image_speed = .2;
 
+// Create an audio emitter
+audio_em = audio_emitter_create();
+
 canBeDamaged = true;
 
 hspd = 0;

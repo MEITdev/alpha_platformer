@@ -173,15 +173,24 @@ switch(room)
         if (gamepad_is_connected(0))
         {
             str = "Press [START] to play!";
+            cstr = "[B] to activate / [A] to jump / [ESC] to quit"
         }
         else
         {
             str = "Press [SPACE] to play!";
+            cstr = "[SPACE] to activate / [UP] to jump / [ESC] to quit"
         }
         
         draw_set_font(fnt_start);
         draw_text_colour(room_width/2 + 4, room_height /2 + 4, str, c_black, c_black, c_black, c_black, .5);
         draw_text_colour(room_width/2, room_height/2, str, c_white, c_white, c_white, c_white, 1);
+        
+        
+        
+        draw_set_font(fnt_gui);
+        draw_text_colour(room_width/2 + 4, room_height -28, cstr, c_black, c_black, c_black, c_black, .5);
+        draw_text_colour(room_width/2, room_height - 32, cstr, c_white, c_white, c_white, c_white, 1);
+        
         
         break;
                
@@ -242,9 +251,33 @@ switch(room)
         // calculate the remaining time
         remaining_time = floor(game_time_limit - floor(player_time/room_speed));
         
+        
+        
         draw_text_colour(room_width/2+2, 32 + 2, string(remaining_time), c_black, c_black, c_black, c_black, 0.5);        
         draw_text_colour(room_width/2, 32, string(remaining_time), c_white, c_white, c_white, c_white, 1);
         
+        // manage the end game scenario
+        if remaining_time &lt;= 0
+        {
+            // calculate the players high score
+            score = PlayerStats.remaining_time + PlayerStats.player_blue_gems * 3;
+            
+            // read the current high score
+            ini_open("highscore.ini");
+            PlayerStats.highscore = ini_read_real("Score", "highscore", 0);
+            
+            // store new high score
+            if score &gt; PlayerStats.highscore
+            {
+                PlayerStats.highscore = score;
+                ini_write_real("Score", "highscore", PlayerStats.highscore);
+            }
+            
+            // Close the ini file
+            ini_close();
+            
+            room_goto(rm_highscore);     
+        }
         
         break;
 }

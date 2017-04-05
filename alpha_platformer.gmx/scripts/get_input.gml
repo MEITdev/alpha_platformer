@@ -6,8 +6,7 @@ up_release = keyboard_check_released(vk_up);
 down = keyboard_check(vk_down);
 left = keyboard_check(vk_left);
 right = keyboard_check(vk_right);
-
-//Map WASD to arrow keys here
+activate = keyboard_check_pressed(vk_space);
 
 // Override when GamePad detected
 var gp_id = 0; // gamepad ID
@@ -20,4 +19,5 @@ if(gamepad_is_connected(gp_id))
     left = gamepad_axis_value(gp_id, gp_axislh) < -thresh;
     right = gamepad_axis_value(gp_id, gp_axislh) > thresh;    
     down = gamepad_axis_value(gp_id, gp_axislv) > thresh;
+    activate = gamepad_button_check(gp_id, gp_face2); // B button on XBOX game controller
 }

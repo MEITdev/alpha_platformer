@@ -154,7 +154,7 @@ with (other)
             <kind>1</kind>
             <string>///Go to the next level if door unlocked
 
-if (up &amp;&amp; PlayerStats.player_has_green_key == true)
+if (activate &amp;&amp; PlayerStats.player_has_green_key == true)
 {
     y = yprevious;
     state = player_exit_state; 
@@ -241,6 +241,7 @@ if (above_enemy &amp;&amp; (falling || state = player_ledge_grab_state)) &amp;&a
     
     // Bounce off the enemy
     vspd = jspd / 1.25;
+    
     // Play the sound
     audio_play_sound(snd_enemy_hurt, 5, false);
         

@@ -3,7 +3,7 @@
   <caption></caption>
   <width>1280</width>
   <height>960</height>
-  <vsnap>64</vsnap>
+  <vsnap>16</vsnap>
   <hsnap>64</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
@@ -124,17 +124,17 @@
     <instance objName="Ground_01" x="1024" y="768" name="inst_83646863" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="1088" y="768" name="inst_99232314" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="1152" y="768" name="inst_B0E7A700" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Lava" x="256" y="768" name="inst_658209B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Lava" x="320" y="768" name="inst_F8B726FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Lava" x="832" y="768" name="inst_61DA68B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Lava" x="896" y="768" name="inst_28447E39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Lava" x="256" y="784" name="inst_658209B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Lava" x="320" y="784" name="inst_F8B726FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Lava" x="832" y="784" name="inst_61DA68B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Lava" x="896" y="784" name="inst_28447E39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="512" y="704" name="inst_27A84773" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="576" y="704" name="inst_48F16E1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="640" y="704" name="inst_25AA0778" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="704" y="704" name="inst_F991E5B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="640" y="640" name="inst_5EBE4A92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="704" y="640" name="inst_91D6D969" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Spiking" x="1072" y="690" name="inst_D33BFC79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Spiking" x="1072" y="704" name="inst_D33BFC79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Floating" x="704" y="544" name="inst_9FEB3ED4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="64" y="384" name="inst_49183D57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="128" y="384" name="inst_92F1CB3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -152,7 +152,7 @@
     <instance objName="Ground_01" x="1152" y="704" name="inst_39AFC545" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GreenDoor" x="1152" y="512" name="inst_2C6F757F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="GreenKey" x="128" y="704" name="inst_4933A926" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Spiking" x="224" y="754" name="inst_DEC83102" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Spiking" x="180" y="768" name="inst_DEC83102" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="EntranceDoor" x="64" y="320" name="inst_BBED6FD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="0" y="960" name="inst_9C63E251" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="64" y="960" name="inst_E31D120A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -185,8 +185,8 @@
     <instance objName="Ground_01" x="576" y="320" name="inst_E8D9F1EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="640" y="320" name="inst_63309BDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="RedGem" x="576" y="224" name="inst_11EF0B9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Spiking" x="640" y="242" name="inst_ABCC5AD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Spiking" x="512" y="242" name="inst_7961003A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Spiking" x="642" y="256" name="inst_ABCC5AD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Spiking" x="514" y="256" name="inst_7961003A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="448" y="256" name="inst_1DAF770C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="448" y="384" name="inst_62B39AC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Ground_01" x="512" y="384" name="inst_38143E9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

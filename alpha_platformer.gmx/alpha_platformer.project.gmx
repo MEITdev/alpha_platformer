@@ -13,7 +13,9 @@
     <sound>sound\snd_enemy_hurt</sound>
     <sound>sound\snd_step</sound>
     <sound>sound\snd_door_opens</sound>
+    <sound>sound\snd_flying_attack</sound>
     <sound>sound\snd_music_boss</sound>
+    <sound>sound\snd_jumping_attack</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Enemies">

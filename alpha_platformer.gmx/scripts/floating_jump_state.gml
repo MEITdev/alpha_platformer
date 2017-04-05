@@ -31,5 +31,12 @@ if (hspd != 0)
     image_xscale = sign(hspd);
 }
 
+// Play sound effect
+if !(audio_is_playing(snd_jumping_attack))
+{
+    audio_emitter_gain(audio_em, 0.5);
+    audio_emitter_pitch(audio_em, random_range(0.9, 1.1));
+    audio_play_sound_on(audio_em, snd_jumping_attack, false, 5);
+}
 // Move
 Move_bounce(Solid);
